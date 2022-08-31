@@ -7,6 +7,35 @@
     <title>formulario</title>
 </head>
 <body>
+    <!-- ul = lista no ordenada -->
+    <ul> 
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul> 0
+
+     <!-- ol = lista  ordenada -->
+     <ol> 
+        <!--indicar con value con que numero empiece-->
+        <li value="50">Elemento 1</li> 
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li> 
+            <ol>
+                <!--list-style-type-alpha para ordenar por letras-->
+                <li style="list-style-type:lower-alpha"> Sub-elemento1</li>
+                <li style="list-style-type:lower-alpha"> Sub-elemento2</li>
+                <li style="list-style-type:lower-alpha"> Sub-elemento3</li>
+            </ol>
+
+
+
+        </li>
+    </ol> 
+
+
     <form action="/formulariodesde0" method="GET">
         <!--METODO GET SE VERA REFLEJADO LOS DATOS EN LA URL AL MOMENTO DE ENVIAR-->
         <!--METODO POST NO SE VERAN PERO EN INSPECCIONAR SE VERA TAMBIEN-->
@@ -19,15 +48,17 @@
         <input   id="nombre" name="nombre" placeholder="ingresa Nombre" /> <!--el servidor lo recibe gracias a que lo dejamos como name-->
         <!--id tambien se llamara igual para enlazar ambos-->
         <hr>
-
         <label  for="numero">ingresa numero:</label>
         <input  type="number" id="numero" name="ingresonumero" placeholder="ingresa Numero" /> 
         <!-- type es para especificar que se debe ingresar por cada input-->
         <br>
-        <textarea cols="50" rows="10" id="comment" placeholder="ingresa texto" name="coment">  </textarea>
+        <textarea cols="50" rows="10" id="comment" placeholder="ingresa texto" name="coment"> este es un valor por defecto  </textarea>
         <!-- rows le podemos dejar fijo cuando medira-->
+<br>
+        <button type="button"><img src="fotos/send1.png"></button><!--con js se debe espcificar que hace y se pueden poner mas etiquetas-->
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar tipo submit</button> <!--enviar formulario a ruta especifico con action-->
 
-        <input type="submit">
 
     </form>
     
