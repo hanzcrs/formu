@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+    <style>
+        table, th, td {border:1px solid black;}
+    </style>
 </head>
+<!--arriba en head si dejamos en style claro que para tabla th y td se aplique el 
+    border no evitamos aplicarlo en cada etiqueta
+-->
 <body>
+    <!--siempre terminar con ;-->
+    <!--en <table style="border:1px solid black;> podemos dejarlo asi pero debemos aplicarlo para th y td
+    para que quede en un cuadro, para eso aplicamos otra forma que lo dejamos en head -->
+
+   <!--para espacio aplicamos style="width 500px"--> 
+<table style="width: 500px";>
+<!--table row o fila dentro de una tabla-->
+<thead> <!--agrupar cabecera-->
+    <tr> 
+        <!--cabecera de la tabla son con th-->
+        <th> producto</th> 
+        <th> precio</th>
+   </tr>
+</thead>
+<tbody>
+    <tr>
+        <!--definir standares  dentro de las celdas -->
+        <td> Computador </td>
+        <td> $1.200.000 </td>
+       </tr>
+       <tr>
+        <!--definir standares  dentro de las celdas -->
+        <td> Celular Samsung </td>
+        <td> $450.000 </td>
+       </tr>
+       <tr>
+        <!--definir standares  dentro de las celdas -->
+        <td> Nintendo switch Neon 64 gb + juego</td>
+        <td> $490.000 </td>
+       </tr>
+</tbody>
+<tfoot>
+    <td></td>
+    <td>$ 2.140.000</td>
+</tfoot>
+</table>
+
+
+
     <!-- ul = lista no ordenada -->
     <ul> 
         <li>Elemento 1</li>
